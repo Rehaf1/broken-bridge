@@ -1,7 +1,6 @@
 package broken_bridge;
 
 public class Prisoner {
-	private String serialNumber ;
 	private int timeDue;
 	private String crimeType ;
 	private String cellNumber ; 
@@ -11,6 +10,6 @@ public class Prisoner {
 	public void privlages(){}
 	public int getStrikes() { return strikes ;  }
 	public void setStrikes(int nStrikes) {strikes = nStrikes;}  
-	
+	public String genrateSerialNumber() { return "" + (int)Math.random()*1000000;}
 
 }
