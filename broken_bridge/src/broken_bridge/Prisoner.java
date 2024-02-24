@@ -1,6 +1,6 @@
 package broken_bridge;
 
-public class Prisoner {
+public class Prisoner extends Person  {
 	private int timeDue;
 	private String crimeType ;
 	private String cellNumber ; 
@@ -9,7 +9,7 @@ public class Prisoner {
     private boolean needsMedication ;
 	
     
-    public Prisonor(String n , String id , int y , String cT , String cN , int st , String sN , boolean med ) {
+    public Prisoner(String n , String id , int y , String cT , String cN , int st , String sN , boolean med ) {
     	super(n,id);
     	timeDue = y ; 
     	crimeType = cT ; 
