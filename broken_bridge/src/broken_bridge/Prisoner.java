@@ -5,11 +5,23 @@ public class Prisoner {
 	private String crimeType ;
 	private String cellNumber ; 
 	private int strikes ; 
+	private String SerialNumber; 
+    private boolean needsMedication ;
 	
-	public boolean needsMedication () {}
+    
+    public Prisonor(String n , String id , int y , String cT , String cN , int st , String sN , boolean med ) {
+    	super(n,id);
+    	timeDue = y ; 
+    	crimeType = cT ; 
+    	cellNumber = cN ; 
+    	strikes = st ; 
+    	SerialNumber = sN ; 
+    	needsMedication = med ; 
+    }
+   
 	public void privlages(){}
 	public int getStrikes() { return strikes ;  }
 	public void setStrikes(int nStrikes) {strikes = nStrikes;}  
-	public String genrateSerialNumber() { return "" + (int)Math.random()*1000000;}
+	public void genrateSerialNumber() { SerialNumber = "" + (int)Math.random()*1000000;}
 
 }
