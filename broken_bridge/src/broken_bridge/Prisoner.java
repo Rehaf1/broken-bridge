@@ -8,7 +8,7 @@ public class Prisoner extends Person  {
 	private String SerialNumber; 
     private boolean needsMedication ;
 	
-    
+    public String getSerialNumber() {return SerialNumber ; }
     public Prisoner(String n , String id , int y , String cT , String cN , int st , String sN , boolean med ) {
     	super(n,id);
     	timeDue = y ; 
