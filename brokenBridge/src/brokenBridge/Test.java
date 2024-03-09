@@ -47,8 +47,9 @@ static Scanner input = new Scanner (System.in);
     			  System.out.print("Number of strikes");
     			  int strikes = input.nextInt();
     			  ;
-    			  Person obj = new Prisoner (name, id , type , serialNumber , time , cellNum , strikes);
-    			  obj.addPrisoner(obj);
+    			  Person person = new Person (name ,id);
+    			  Prisoner prisoner = new Prisoner (type , serialNumber ,time , cellNum , strikes);
+    			  person.addPrisoner(prisoner);
     			  break;
     		  case 2 : 
     		 
